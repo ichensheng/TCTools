@@ -10,24 +10,24 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  UI大小分类，分六档
- */
-UIKIT_EXTERN NSString * const TCSizeCategorySmall;
-UIKIT_EXTERN NSString * const TCSizeCategoryMedium;
-UIKIT_EXTERN NSString * const TCSizeCategoryLarge;
-UIKIT_EXTERN NSString * const TCSizeCategoryExtraLarge;
-UIKIT_EXTERN NSString * const TCSizeCategoryExtraExtraLarge;
-UIKIT_EXTERN NSString * const TCSizeCategoryExtraExtraExtraLarge;
-
-/**
  *  字体大小分类
  */
+UIKIT_EXTERN NSString * const TCFontTextStyleThemeHead;
 UIKIT_EXTERN NSString * const TCFontTextStyleHeadline;
 UIKIT_EXTERN NSString * const TCFontTextStyleSubheadline;
 UIKIT_EXTERN NSString * const TCFontTextStyleBody;
 UIKIT_EXTERN NSString * const TCFontTextStyleFootnote;
 UIKIT_EXTERN NSString * const TCFontTextStyleCaption1;
 UIKIT_EXTERN NSString * const TCFontTextStyleCaption2;
+
+/**
+ *  cell高度分类
+ */
+UIKIT_EXTERN NSString * const TCCellHeightStyle44;
+UIKIT_EXTERN NSString * const TCCellHeightStyle55;
+UIKIT_EXTERN NSString * const TCCellHeightStyle66;
+UIKIT_EXTERN NSString * const TCCellHeightStyle77;
+UIKIT_EXTERN NSString * const TCCellHeightStyle88;
 
 @interface TCSizeManager : NSObject
 
@@ -50,6 +50,22 @@ UIKIT_EXTERN NSString * const TCFontTextStyleCaption2;
  *  @return 字体大小
  */
 + (CGFloat)fontSizeForTextStyle:(NSString *)textStyle;
+
+/**
+ *  通过cell高度类型获取不同UI尺寸的cell高度
+ *
+ *  @param heightStyle cell高度类型
+ *
+ *  @return cell高度
+ */
++ (CGFloat)cellHeightWithStyle:(NSString *)heightStyle;
+
+/**
+ *  获取tabBar的高度
+ *
+ *  @return tabBar高度
+ */
++ (CGFloat)tabBarHeight;
 
 /**
  *  获取当前UI尺寸类型

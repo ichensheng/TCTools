@@ -18,6 +18,7 @@
 		3464842B1D1D184F00E0E6DF /* TCLocalizableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 346484281D1D184F00E0E6DF /* TCLocalizableManager.m */; };
 		3464842C1D1D184F00E0E6DF /* TCSizeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464842A1D1D184F00E0E6DF /* TCSizeManager.m */; };
 		3464842F1D1D199900E0E6DF /* TCNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464842E1D1D199900E0E6DF /* TCNotificationManager.m */; };
+		346484341D20B3A000E0E6DF /* TCMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 346484331D20B3A000E0E6DF /* TCMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		3464842A1D1D184F00E0E6DF /* TCSizeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSizeManager.m; sourceTree = "<group>"; };
 		3464842D1D1D199900E0E6DF /* TCNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNotificationManager.h; sourceTree = "<group>"; };
 		3464842E1D1D199900E0E6DF /* TCNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNotificationManager.m; sourceTree = "<group>"; };
+		346484321D20B3A000E0E6DF /* TCMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMenu.h; sourceTree = "<group>"; };
+		346484331D20B3A000E0E6DF /* TCMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 				346484281D1D184F00E0E6DF /* TCLocalizableManager.m */,
 				346484291D1D184F00E0E6DF /* TCSizeManager.h */,
 				3464842A1D1D184F00E0E6DF /* TCSizeManager.m */,
+				346484321D20B3A000E0E6DF /* TCMenu.h */,
+				346484331D20B3A000E0E6DF /* TCMenu.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			files = (
 				3464842F1D1D199900E0E6DF /* TCNotificationManager.m in Sources */,
 				3464842B1D1D184F00E0E6DF /* TCLocalizableManager.m in Sources */,
+				346484341D20B3A000E0E6DF /* TCMenu.m in Sources */,
 				3464842C1D1D184F00E0E6DF /* TCSizeManager.m in Sources */,
 				346483FB1D1D17F400E0E6DF /* ViewController.m in Sources */,
 				346483F81D1D17F400E0E6DF /* AppDelegate.m in Sources */,

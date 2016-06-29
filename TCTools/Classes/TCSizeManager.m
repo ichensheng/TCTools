@@ -34,6 +34,15 @@ NSString * const TCFontTextStyleFootnote = @"TCFontTextStyleFootnote";
 NSString * const TCFontTextStyleCaption1 = @"TCFontTextStyleCaption1";
 NSString * const TCFontTextStyleCaption2 = @"TCFontTextStyleCaption2";
 
+/**
+ *  cell高度分类
+ */
+NSString * const TCCellHeightStyle44 = @"TCCellHeightStyle44";
+NSString * const TCCellHeightStyle55 = @"TCCellHeightStyle55";
+NSString * const TCCellHeightStyle66 = @"TCCellHeightStyle66";
+NSString * const TCCellHeightStyle77 = @"TCCellHeightStyle77";
+NSString * const TCCellHeightStyle88 = @"TCCellHeightStyle88";
+
 @implementation TCSizeManager
 
 /**
@@ -49,7 +58,6 @@ NSString * const TCFontTextStyleCaption2 = @"TCFontTextStyleCaption2";
     
     CGFloat fontSize = 17.0f; // 字体基准大小
     NSString *sizeCategory = [self sizeCategory];
-    
     static dispatch_once_t onceToken;
     static NSDictionary *fontSizeOffsetDictionary;
     dispatch_once(&onceToken, ^{
@@ -125,6 +133,92 @@ NSString * const TCFontTextStyleCaption2 = @"TCFontTextStyleCaption2";
  */
 + (CGFloat)fontSizeForTextStyle:(NSString *)textStyle {
     return [self fontSizeForTextStyle:textStyle offset:0];
+}
+
+/**
+ *  通过cell高度类型获取不同UI尺寸的cell高度
+ *
+ *  @param heightStyle cell高度类型
+ *
+ *  @return cell高度
+ */
++ (CGFloat)cellHeightWithStyle:(NSString *)heightStyle {
+    NSString *sizeCategory = [self sizeCategory];
+    static dispatch_once_t onceToken;
+    static NSDictionary *cellHeightDictionary;
+    dispatch_once(&onceToken, ^{
+        cellHeightDictionary = @{
+                                 TCSizeCategorySmall: @{
+                                         TCCellHeightStyle44:@(40),
+                                         TCCellHeightStyle55:@(50),
+                                         TCCellHeightStyle66:@(60),
+                                         TCCellHeightStyle77:@(70),
+                                         TCCellHeightStyle88:@(80)},
+                                     
+                                 TCSizeCategoryMedium: @{
+                                         TCCellHeightStyle44:@(44),
+                                         TCCellHeightStyle55:@(55),
+                                         TCCellHeightStyle66:@(66),
+                                         TCCellHeightStyle77:@(77),
+                                         TCCellHeightStyle88:@(88)},
+                                 
+                                 TCSizeCategoryLarge: @{
+                                         TCCellHeightStyle44:@(48),
+                                         TCCellHeightStyle55:@(60),
+                                         TCCellHeightStyle66:@(72),
+                                         TCCellHeightStyle77:@(84),
+                                         TCCellHeightStyle88:@(96)},
+                                     
+                                 TCSizeCategoryExtraLarge: @{
+                                         TCCellHeightStyle44:@(52),
+                                         TCCellHeightStyle55:@(65),
+                                         TCCellHeightStyle66:@(78),
+                                         TCCellHeightStyle77:@(91),
+                                         TCCellHeightStyle88:@(104)},
+                                     
+                                 TCSizeCategoryExtraExtraLarge: @{
+                                         TCCellHeightStyle44:@(56),
+                                         TCCellHeightStyle55:@(70),
+                                         TCCellHeightStyle66:@(84),
+                                         TCCellHeightStyle77:@(98),
+                                         TCCellHeightStyle88:@(112)},
+                                     
+                                 TCSizeCategoryExtraExtraExtraLarge: @{
+                                         TCCellHeightStyle44:@(60),
+                                         TCCellHeightStyle55:@(75),
+                                         TCCellHeightStyle66:@(90),
+                                         TCCellHeightStyle77:@(105),
+                                         TCCellHeightStyle88:@(120)}
+                                 };
+        
+    });
+    
+    CGFloat cellHeight = [cellHeightDictionary[sizeCategory][heightStyle] doubleValue];
+    return cellHeight;
+}
+
+/**
+ *  获取tabBar的高度
+ *
+ *  @return tabBar高度
+ */
++ (CGFloat)tabBarHeight {
+    NSString *sizeCategory = [self sizeCategory];
+    static dispatch_once_t onceToken;
+    static NSDictionary *tabBarHeightDictionary;
+    dispatch_once(&onceToken, ^{
+        tabBarHeightDictionary = @{
+                                 TCSizeCategorySmall: @(49),
+                                 TCSizeCategoryMedium: @(49),
+                                 TCSizeCategoryLarge: @(49),
+                                 TCSizeCategoryExtraLarge: @(49),
+                                 TCSizeCategoryExtraExtraLarge: @(49),
+                                 TCSizeCategoryExtraExtraExtraLarge: @(49)};
+        
+    });
+    
+    CGFloat tabBarHeight = [tabBarHeightDictionary[sizeCategory] doubleValue];
+    return tabBarHeight;
 }
 
 /**
