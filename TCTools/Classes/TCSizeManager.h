@@ -61,6 +61,15 @@ UIKIT_EXTERN NSString * const TCCellHeightStyle88;
 + (CGFloat)cellHeightWithStyle:(NSString *)heightStyle;
 
 /**
+ *  通过icon高度类型获取不同UI尺寸的icon size
+ *
+ *  @param iconSizeStyle icon size类型
+ *
+ *  @return icon size
+ */
++ (CGSize)iconSizeWithStyle:(NSString *)iconSizeStyle;
+
+/**
  *  获取tabBar的高度
  *
  *  @return tabBar高度
