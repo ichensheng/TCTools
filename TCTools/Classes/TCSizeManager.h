@@ -12,21 +12,17 @@
 /**
  *  字体大小分类
  */
-UIKIT_EXTERN NSString * const TCFontTextStyleThemeHead;
-UIKIT_EXTERN NSString * const TCFontTextStyleHeadline;
-UIKIT_EXTERN NSString * const TCFontTextStyleSubheadline;
-UIKIT_EXTERN NSString * const TCFontTextStyleBody;
-UIKIT_EXTERN NSString * const TCFontTextStyleFootnote;
-UIKIT_EXTERN NSString * const TCFontTextStyleCaption1;
-UIKIT_EXTERN NSString * const TCFontTextStyleCaption2;
+UIKIT_EXTERN NSString * const TCFontTextStyle17;
+UIKIT_EXTERN NSString * const TCFontTextStyle16;
+UIKIT_EXTERN NSString * const TCFontTextStyle14;
+UIKIT_EXTERN NSString * const TCFontTextStyle12;
+UIKIT_EXTERN NSString * const TCFontTextStyle10;
 
 /**
  *  cell高度分类
  */
 UIKIT_EXTERN NSString * const TCCellHeightStyle44;
 UIKIT_EXTERN NSString * const TCCellHeightStyle55;
-UIKIT_EXTERN NSString * const TCCellHeightStyle66;
-UIKIT_EXTERN NSString * const TCCellHeightStyle77;
 UIKIT_EXTERN NSString * const TCCellHeightStyle88;
 
 @interface TCSizeManager : NSObject
