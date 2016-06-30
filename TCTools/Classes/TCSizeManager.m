@@ -71,7 +71,6 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
 + (CGFloat)fontSizeForTextStyle:(NSString *)textStyle
                          offset:(CGFloat)offset {
     
-    CGFloat fontSize = 17.0f; // 字体基准大小
     NSString *sizeCategory = [self sizeCategory];
     static dispatch_once_t onceToken;
     static NSDictionary *fontSizeOffsetDictionary;
@@ -128,8 +127,7 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
         
     });
     
-    CGFloat fontSizeOffset = [fontSizeOffsetDictionary[sizeCategory][textStyle] doubleValue] + offset;
-    fontSize += fontSizeOffset;
+    CGFloat fontSize = [fontSizeOffsetDictionary[sizeCategory][textStyle] doubleValue] + offset;
     return fontSize;
 }
 
