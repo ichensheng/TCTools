@@ -370,4 +370,14 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
     return sizeCategory;
 }
 
+/**
+ *  修改UI尺寸
+ *
+ *  @param sizeCategory UI尺寸
+ */
++ (void)changeSizeCategory:(NSString *)sizeCategory {
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setObject:sizeCategory forKey:TCSizeCategory];
+}
+
 @end
