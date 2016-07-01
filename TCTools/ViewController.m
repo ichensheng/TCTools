@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TCSizeManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%f", CHAT_FONT_SIZE);
+    NSLog(@"%f", FONT_SIZE(TCFontTextStyle10));
+    NSLog(@"%f", CELL_HEIGHT(TCCellHeightStyle39));
+    NSLog(@"%@", NSStringFromCGSize(ICON_SIZE(TCIconSizeStyle17)));
+    NSLog(@"%f", TABBAR_HEIGHT);
+    NSLog(@"%@", SIZE_CATEGORY);
 }
 
 - (void)didReceiveMemoryWarning {
