@@ -40,6 +40,7 @@ NSString * const TCCellHeightStyle39 = @"TCCellHeightStyle39";
 NSString * const TCCellHeightStyle44 = @"TCCellHeightStyle44";
 NSString * const TCCellHeightStyle45 = @"TCCellHeightStyle45";
 NSString * const TCCellHeightStyle55 = @"TCCellHeightStyle55";
+NSString * const TCCellHeightStyle82 = @"TCCellHeightStyle82";
 NSString * const TCCellHeightStyle88 = @"TCCellHeightStyle88";
 
 /**
@@ -184,6 +185,7 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
                                          TCCellHeightStyle44:@(41.5),
                                          TCCellHeightStyle45:@(43.5),
                                          TCCellHeightStyle55:@(52),
+                                         TCCellHeightStyle88:@(77),
                                          TCCellHeightStyle88:@(82.5)},
                                      
                                  TCSizeCategoryMedium: @{
@@ -191,6 +193,7 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
                                          TCCellHeightStyle44:@(44),
                                          TCCellHeightStyle45:@(45),
                                          TCCellHeightStyle55:@(55),
+                                         TCCellHeightStyle88:@(82),
                                          TCCellHeightStyle88:@(88)},
                                  
                                  TCSizeCategoryLarge: @{
@@ -198,6 +201,7 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
                                          TCCellHeightStyle44:@(47),
                                          TCCellHeightStyle45:@(47),
                                          TCCellHeightStyle55:@(58.5),
+                                         TCCellHeightStyle88:@(87.5),
                                          TCCellHeightStyle88:@(93.5)},
                                      
                                  TCSizeCategoryExtraLarge: @{
@@ -205,6 +209,7 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
                                          TCCellHeightStyle44:@(49.5),
                                          TCCellHeightStyle45:@(48.5),
                                          TCCellHeightStyle55:@(62),
+                                         TCCellHeightStyle88:@(92.5),
                                          TCCellHeightStyle88:@(99)},
                                      
                                  TCSizeCategoryExtraExtraLarge: @{
@@ -212,6 +217,7 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
                                          TCCellHeightStyle44:@(54),
                                          TCCellHeightStyle45:@(51.5),
                                          TCCellHeightStyle55:@(67.5),
+                                         TCCellHeightStyle88:@(100),
                                          TCCellHeightStyle88:@(107.5)},
                                      
                                  TCSizeCategoryExtraExtraExtraLarge: @{
@@ -219,6 +225,7 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
                                          TCCellHeightStyle44:@(54),
                                          TCCellHeightStyle45:@(51.5),
                                          TCCellHeightStyle55:@(67.5),
+                                         TCCellHeightStyle88:@(100),
                                          TCCellHeightStyle88:@(107.5)}
                                  };
         

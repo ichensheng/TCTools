@@ -65,6 +65,7 @@ UIKIT_EXTERN NSString * const TCCellHeightStyle39;
 UIKIT_EXTERN NSString * const TCCellHeightStyle44;
 UIKIT_EXTERN NSString * const TCCellHeightStyle45;
 UIKIT_EXTERN NSString * const TCCellHeightStyle55;
+UIKIT_EXTERN NSString * const TCCellHeightStyle82;
 UIKIT_EXTERN NSString * const TCCellHeightStyle88;
 
 /**
