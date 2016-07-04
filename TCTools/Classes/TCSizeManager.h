@@ -66,12 +66,14 @@ UIKIT_EXTERN NSString * const TCCellHeightStyle44;
 UIKIT_EXTERN NSString * const TCCellHeightStyle45;
 UIKIT_EXTERN NSString * const TCCellHeightStyle55;
 UIKIT_EXTERN NSString * const TCCellHeightStyle82;
+UIKIT_EXTERN NSString * const TCCellHeightStyle87;
 UIKIT_EXTERN NSString * const TCCellHeightStyle88;
 
 /**
  *  icon尺寸分类
  */
 UIKIT_EXTERN NSString * const TCIconSizeStyle17;
+UIKIT_EXTERN NSString * const TCIconSizeStyle18;
 UIKIT_EXTERN NSString * const TCIconSizeStyle20;
 UIKIT_EXTERN NSString * const TCIconSizeStyle23;
 UIKIT_EXTERN NSString * const TCIconSizeStyle25;
@@ -79,10 +81,10 @@ UIKIT_EXTERN NSString * const TCIconSizeStyle33;
 UIKIT_EXTERN NSString * const TCIconSizeStyle36;
 UIKIT_EXTERN NSString * const TCIconSizeStyle40;
 UIKIT_EXTERN NSString * const TCIconSizeStyle45;
+UIKIT_EXTERN NSString * const TCIconSizeStyle56;
 UIKIT_EXTERN NSString * const TCIconSizeStyle64;
-UIKIT_EXTERN NSString * const TCIconSizeStyle70;
-UIKIT_EXTERN NSString * const TCIconSizeStyle71;
-UIKIT_EXTERN NSString * const TCIconSizeStyle72;
+UIKIT_EXTERN NSString * const TCIconSizeStyle65;
+UIKIT_EXTERN NSString * const TCIconSizeStyle66;
 
 @interface TCSizeManager : NSObject
 
