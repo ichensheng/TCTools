@@ -53,6 +53,7 @@ NSString * const TCIconSizeStyle18 = @"TCIconSizeStyle18";
 NSString * const TCIconSizeStyle20 = @"TCIconSizeStyle20";
 NSString * const TCIconSizeStyle23 = @"TCIconSizeStyle23";
 NSString * const TCIconSizeStyle25 = @"TCIconSizeStyle25";
+NSString * const TCIconSizeStyle30 = @"TCIconSizeStyle30";
 NSString * const TCIconSizeStyle33 = @"TCIconSizeStyle33";
 NSString * const TCIconSizeStyle36 = @"TCIconSizeStyle36";
 NSString * const TCIconSizeStyle40 = @"TCIconSizeStyle40";
@@ -269,8 +270,9 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
                                        TCIconSizeStyle20:@(19),
                                        TCIconSizeStyle23:@(22),
                                        TCIconSizeStyle25:@(23),
-                                       TCIconSizeStyle36:@(34),
+                                       TCIconSizeStyle30:@(29),
                                        TCIconSizeStyle33:@(32),
+                                       TCIconSizeStyle36:@(34),
                                        TCIconSizeStyle40:@(37.5),
                                        TCIconSizeStyle45:@(42.5),
                                        TCIconSizeStyle56:@(52.5),
@@ -284,6 +286,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
                                        TCIconSizeStyle20:@(20),
                                        TCIconSizeStyle23:@(23),
                                        TCIconSizeStyle25:@(25),
+                                       TCIconSizeStyle30:@(30),
                                        TCIconSizeStyle33:@(33),
                                        TCIconSizeStyle36:@(36),
                                        TCIconSizeStyle40:@(40),
@@ -299,6 +302,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
                                        TCIconSizeStyle20:@(21),
                                        TCIconSizeStyle23:@(24),
                                        TCIconSizeStyle25:@(27),
+                                       TCIconSizeStyle30:@(32),
                                        TCIconSizeStyle33:@(35),
                                        TCIconSizeStyle36:@(38.5),
                                        TCIconSizeStyle40:@(42.5),
@@ -314,6 +318,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
                                        TCIconSizeStyle20:@(22),
                                        TCIconSizeStyle23:@(26),
                                        TCIconSizeStyle25:@(28),
+                                       TCIconSizeStyle30:@(34),
                                        TCIconSizeStyle33:@(37),
                                        TCIconSizeStyle36:@(40.5),
                                        TCIconSizeStyle40:@(45),
@@ -329,6 +334,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
                                        TCIconSizeStyle20:@(25),
                                        TCIconSizeStyle23:@(28),
                                        TCIconSizeStyle25:@(30),
+                                       TCIconSizeStyle30:@(36),
                                        TCIconSizeStyle33:@(39),
                                        TCIconSizeStyle36:@(44),
                                        TCIconSizeStyle40:@(50),
@@ -344,6 +350,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
                                        TCIconSizeStyle20:@(25),
                                        TCIconSizeStyle23:@(28),
                                        TCIconSizeStyle25:@(30),
+                                       TCIconSizeStyle30:@(36),
                                        TCIconSizeStyle33:@(39),
                                        TCIconSizeStyle36:@(44),
                                        TCIconSizeStyle40:@(50),
