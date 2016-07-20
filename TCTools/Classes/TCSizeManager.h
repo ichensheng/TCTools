@@ -25,10 +25,6 @@
 #define ICON_SIZE(style) [TCSizeManager iconSizeWithStyle:style]
 #endif
 
-#ifndef TABBAR_HEIGHT
-#define TABBAR_HEIGHT [TCSizeManager tabBarHeight]
-#endif
-
 #ifndef BUTTON_HEIGHT
 #define BUTTON_HEIGHT [TCSizeManager defaultButtonHeight]
 #endif
@@ -140,13 +136,6 @@ UIKIT_EXTERN NSString * const TCIconSizeStyle66;
  *  @return icon size
  */
 + (CGSize)iconSizeWithStyle:(NSString *)iconSizeStyle;
-
-/**
- *  获取tabBar的高度
- *
- *  @return tabBar高度
- */
-+ (CGFloat)tabBarHeight;
 
 /**
  *  获取通用button的高度
