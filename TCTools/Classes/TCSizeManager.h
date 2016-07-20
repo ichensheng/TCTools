@@ -25,10 +25,6 @@
 #define ICON_SIZE(style) [TCSizeManager iconSizeWithStyle:style]
 #endif
 
-#ifndef TABBAR_HEIGHT
-#define TABBAR_HEIGHT [TCSizeManager tabBarHeight]
-#endif
-
 #ifndef SIZE_CATEGORY
 #define SIZE_CATEGORY [TCSizeManager sizeCategory]
 #endif
@@ -134,13 +130,6 @@ UIKIT_EXTERN NSString * const TCIconSizeStyle66;
  *  @return icon size
  */
 + (CGSize)iconSizeWithStyle:(NSString *)iconSizeStyle;
-
-/**
- *  获取tabBar的高度
- *
- *  @return tabBar高度
- */
-+ (CGFloat)tabBarHeight;
 
 /**
  *  获取当前UI尺寸类型

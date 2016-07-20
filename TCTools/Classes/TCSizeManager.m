@@ -368,30 +368,6 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
 }
 
 /**
- *  获取tabBar的高度
- *
- *  @return tabBar高度
- */
-+ (CGFloat)tabBarHeight {
-    NSString *sizeCategory = [self sizeCategory];
-    static dispatch_once_t onceToken;
-    static NSDictionary *tabBarHeightDictionary;
-    dispatch_once(&onceToken, ^{
-        tabBarHeightDictionary = @{
-                                   TCSizeCategorySmall: @(46),
-                                   TCSizeCategoryMedium: @(49),
-                                   TCSizeCategoryLarge: @(52.5),
-                                   TCSizeCategoryExtraLarge: @(55.5),
-                                   TCSizeCategoryExtraExtraLarge: @(60),
-                                   TCSizeCategoryExtraExtraExtraLarge: @(60)};
-        
-    });
-    
-    CGFloat tabBarHeight = [tabBarHeightDictionary[sizeCategory] doubleValue];
-    return tabBarHeight;
-}
-
-/**
  *  获取当前UI尺寸类型
  *
  *  @return UI尺寸类型
