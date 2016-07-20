@@ -28,10 +28,12 @@ NSString * const TCSizeCategoryExtraExtraExtraLarge = @"TCSizeCategoryExtraExtra
  */
 NSString * const TCFontTextStyle10 = @"TCFontTextStyle10";
 NSString * const TCFontTextStyle12 = @"TCFontTextStyle12";
+NSString * const TCFontTextStyle13 = @"TCFontTextStyle13";
 NSString * const TCFontTextStyle14 = @"TCFontTextStyle14";
 NSString * const TCFontTextStyle15 = @"TCFontTextStyle15";
 NSString * const TCFontTextStyle16 = @"TCFontTextStyle16";
 NSString * const TCFontTextStyle17 = @"TCFontTextStyle17";
+NSString * const TCFontTextStyle18 = @"TCFontTextStyle18";
 
 /**
  *  cell高度分类
@@ -84,50 +86,62 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
                                      TCSizeCategorySmall: @{
                                              TCFontTextStyle10: @(9.375),
                                              TCFontTextStyle12: @(11.25),
+                                             TCFontTextStyle13: @(12.1875),
                                              TCFontTextStyle14: @(13.125),
                                              TCFontTextStyle15: @(14.0625),
                                              TCFontTextStyle16: @(15),
-                                             TCFontTextStyle17: @(15.9375)},
+                                             TCFontTextStyle17: @(15.9375),
+                                             TCFontTextStyle18: @(16.875)},
                                      
                                      TCSizeCategoryMedium: @{
                                              TCFontTextStyle10: @(10),
                                              TCFontTextStyle12: @(12),
+                                             TCFontTextStyle13: @(13),
                                              TCFontTextStyle14: @(14),
                                              TCFontTextStyle15: @(15),
                                              TCFontTextStyle16: @(16),
-                                             TCFontTextStyle17: @(17)},
+                                             TCFontTextStyle17: @(17),
+                                             TCFontTextStyle18: @(18)},
                                      
                                      TCSizeCategoryLarge: @{
                                              TCFontTextStyle10: @(10.625),
                                              TCFontTextStyle12: @(12.75),
+                                             TCFontTextStyle13: @(13.8125),
                                              TCFontTextStyle14: @(14.875),
                                              TCFontTextStyle15: @(15.9375),
                                              TCFontTextStyle16: @(17),
-                                             TCFontTextStyle17: @(18.0625)},
+                                             TCFontTextStyle17: @(18.0625),
+                                             TCFontTextStyle18: @(19.125)},
                                      
                                      TCSizeCategoryExtraLarge: @{
                                              TCFontTextStyle10: @(11.25),
                                              TCFontTextStyle12: @(13.5),
+                                             TCFontTextStyle13: @(14.625),
                                              TCFontTextStyle14: @(15.75),
                                              TCFontTextStyle15: @(16.875),
                                              TCFontTextStyle16: @(18),
-                                             TCFontTextStyle17: @(19.125)},
+                                             TCFontTextStyle17: @(19.125),
+                                             TCFontTextStyle18: @(20.25)},
                                      
                                      TCSizeCategoryExtraExtraLarge: @{
                                              TCFontTextStyle10: @(12.1875),
                                              TCFontTextStyle12: @(14.625),
+                                             TCFontTextStyle13: @(16.25),
                                              TCFontTextStyle14: @(17.0625),
                                              TCFontTextStyle15: @(18.28125),
                                              TCFontTextStyle16: @(19.5),
-                                             TCFontTextStyle17: @(20.71875)},
+                                             TCFontTextStyle17: @(20.71875),
+                                             TCFontTextStyle18: @(26.5)},
                                      
                                      TCSizeCategoryExtraExtraExtraLarge: @{
                                              TCFontTextStyle10: @(12.1875),
                                              TCFontTextStyle12: @(14.625),
+                                             TCFontTextStyle13: @(16.25),
                                              TCFontTextStyle14: @(17.0625),
                                              TCFontTextStyle15: @(18.28125),
                                              TCFontTextStyle16: @(19.5),
-                                             TCFontTextStyle17: @(20.71875)}
+                                             TCFontTextStyle17: @(20.71875),
+                                             TCFontTextStyle18: @(26.5)}
                                      };
         
     });
@@ -390,6 +404,32 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
     CGFloat tabBarHeight = [tabBarHeightDictionary[sizeCategory] doubleValue];
     return tabBarHeight;
 }
+
+/**
+ *  获取通用button的高度
+ *
+ *  @return 通用button高度
+ */
+
++ (CGFloat)defaultButtonHeight {
+    NSString *sizeCategory = [self sizeCategory];
+    static dispatch_once_t onceToken;
+    static NSDictionary *bottonHeightDictionary;
+    dispatch_once(&onceToken, ^{
+        bottonHeightDictionary = @{
+                                   TCSizeCategorySmall: @(44.5),
+                                   TCSizeCategoryMedium: @(47),
+                                   TCSizeCategoryLarge: @(50),
+                                   TCSizeCategoryExtraLarge: @(53),
+                                   TCSizeCategoryExtraExtraLarge: @(57.5),
+                                   TCSizeCategoryExtraExtraExtraLarge: @(57.5)};
+        
+    });
+    
+    CGFloat buttonHeight = [bottonHeightDictionary[sizeCategory] doubleValue];
+    return buttonHeight;
+}
+
 
 /**
  *  获取当前UI尺寸类型

@@ -29,6 +29,10 @@
 #define TABBAR_HEIGHT [TCSizeManager tabBarHeight]
 #endif
 
+#ifndef BUTTON_HEIGHT
+#define BUTTON_HEIGHT [TCSizeManager defaultButtonHeight]
+#endif
+
 #ifndef SIZE_CATEGORY
 #define SIZE_CATEGORY [TCSizeManager sizeCategory]
 #endif
@@ -52,10 +56,12 @@ UIKIT_EXTERN NSString * const TCSizeCategoryExtraExtraExtraLarge;
  */
 UIKIT_EXTERN NSString * const TCFontTextStyle10;
 UIKIT_EXTERN NSString * const TCFontTextStyle12;
+UIKIT_EXTERN NSString * const TCFontTextStyle13;
 UIKIT_EXTERN NSString * const TCFontTextStyle14;
 UIKIT_EXTERN NSString * const TCFontTextStyle15;
 UIKIT_EXTERN NSString * const TCFontTextStyle16;
 UIKIT_EXTERN NSString * const TCFontTextStyle17;
+UIKIT_EXTERN NSString * const TCFontTextStyle18;
 
 
 /**
@@ -141,6 +147,14 @@ UIKIT_EXTERN NSString * const TCIconSizeStyle66;
  *  @return tabBar高度
  */
 + (CGFloat)tabBarHeight;
+
+/**
+ *  获取通用button的高度
+ *
+ *  @return 通用button高度
+ */
+
++ (CGFloat)defaultButtonHeight;
 
 /**
  *  获取当前UI尺寸类型
