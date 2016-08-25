@@ -85,6 +85,7 @@ UIKIT_EXTERN NSString * const TCIconSizeStyle33;
 UIKIT_EXTERN NSString * const TCIconSizeStyle36;
 UIKIT_EXTERN NSString * const TCIconSizeStyle40;
 UIKIT_EXTERN NSString * const TCIconSizeStyle45;
+UIKIT_EXTERN NSString * const TCIconSizeStyle50;
 UIKIT_EXTERN NSString * const TCIconSizeStyle56;
 UIKIT_EXTERN NSString * const TCIconSizeStyle64;
 UIKIT_EXTERN NSString * const TCIconSizeStyle65;
