@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TCTools"
-  s.version      = "0.1.12"
+  s.version      = "0.1.13"
   s.summary      = "常用工具类"
   s.homepage     = "https://github.com/ichensheng/TCTools"
   s.license      = "MIT"
