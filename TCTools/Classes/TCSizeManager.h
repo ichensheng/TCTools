@@ -160,4 +160,11 @@ UIKIT_EXTERN NSString * const TCIconSizeStyle66;
  */
 + (void)changeSizeCategory:(NSString *)sizeCategory;
 
+/**
+ *  不同尺寸的手机计算出来的size是不一样的
+ *
+ *  @return 倍率
+ */
++ (CGFloat)sizeRatio;
+
 @end

@@ -148,7 +148,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
     });
     
     CGFloat fontSize = [fontSizeOffsetDictionary[sizeCategory][textStyle] doubleValue] + offset;
-    return fontSize;
+    return fontSize * [self sizeRatio];
 }
 
 /**
@@ -183,7 +183,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
     });
     
     CGFloat chatFontSize = [chatFontSizeOffsetDictionary[sizeCategory] doubleValue];
-    return chatFontSize;
+    return chatFontSize * [self sizeRatio];
 }
 
 /**
@@ -263,7 +263,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
     });
     
     CGFloat cellHeight = [cellHeightDictionary[sizeCategory][heightStyle] doubleValue];
-    return cellHeight;
+    return cellHeight * [self sizeRatio];
 }
 
 /**
@@ -384,7 +384,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
         
     });
     
-    CGFloat height = [iconSizeDictionary[sizeCategory][iconSizeStyle] doubleValue];
+    CGFloat height = [iconSizeDictionary[sizeCategory][iconSizeStyle] doubleValue] * [self sizeRatio];
     return CGSizeMake(height, height);
 }
 
@@ -410,7 +410,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
     });
     
     CGFloat buttonHeight = [bottonHeightDictionary[sizeCategory] doubleValue];
-    return buttonHeight;
+    return buttonHeight * [self sizeRatio];
 }
 
 
@@ -436,6 +436,18 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
 + (void)changeSizeCategory:(NSString *)sizeCategory {
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     [userDefault setObject:sizeCategory forKey:TCSizeCategory];
+}
+
+/**
+ *  不同尺寸的手机计算出来的size是不一样的
+ *
+ *  @return 倍率
+ */
++ (CGFloat)sizeRatio {
+    if ([UIScreen mainScreen].bounds.size.width > 320) {
+        return 1.05f;
+    }
+    return 1.0f;
 }
 
 @end
