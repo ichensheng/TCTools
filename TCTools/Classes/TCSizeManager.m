@@ -148,7 +148,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
     });
     
     CGFloat fontSize = [fontSizeOffsetDictionary[sizeCategory][textStyle] doubleValue] + offset;
-    return fontSize * [self sizeRatio];
+    return fontSize;
 }
 
 /**
@@ -183,7 +183,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
     });
     
     CGFloat chatFontSize = [chatFontSizeOffsetDictionary[sizeCategory] doubleValue];
-    return chatFontSize * [self sizeRatio];
+    return chatFontSize;
 }
 
 /**
@@ -263,7 +263,7 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
     });
     
     CGFloat cellHeight = [cellHeightDictionary[sizeCategory][heightStyle] doubleValue];
-    return cellHeight * [self sizeRatio];
+    return cellHeight + floor(([self sizeRatio] - 1) * cellHeight);
 }
 
 /**
