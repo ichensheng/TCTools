@@ -167,4 +167,9 @@ UIKIT_EXTERN NSString * const TCIconSizeStyle66;
  */
 + (CGFloat)sizeRatio;
 
+/**
+ *  启用或禁用尺寸倍率
+ */
++ (void)autoSizeRatio:(BOOL)enable;
+
 @end

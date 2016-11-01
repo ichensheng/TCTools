@@ -66,6 +66,11 @@ NSString * const TCIconSizeStyle64 = @"TCIconSizeStyle64";
 NSString * const TCIconSizeStyle65 = @"TCIconSizeStyle65";
 NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
 
+/**
+ * 是否启用在大屏幕下放大size的功能，默认不启用
+ */
+static BOOL sizeRatio = NO;
+
 @implementation TCSizeManager
 
 /**
@@ -444,10 +449,19 @@ NSString * const TCIconSizeStyle66 = @"TCIconSizeStyle66";
  *  @return 倍率
  */
 + (CGFloat)sizeRatio {
-    if ([UIScreen mainScreen].bounds.size.width > 320) {
-        return 1.05f;
+    if (sizeRatio) {
+        if ([UIScreen mainScreen].bounds.size.width > 320) {
+            return 1.05f;
+        }
     }
     return 1.0f;
+}
+
+/**
+ *  启用或禁用尺寸倍率
+ */
++ (void)autoSizeRatio:(BOOL)enable {
+    sizeRatio = enable;
 }
 
 @end
