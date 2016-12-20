@@ -96,7 +96,7 @@ static BOOL sizeRatio = NO;
                                              TCFontTextStyle14: @(13.125),
                                              TCFontTextStyle15: @(14.0625),
                                              TCFontTextStyle16: @(15),
-                                             TCFontTextStyle17: @(15.9375),
+                                             TCFontTextStyle17: @(15),
                                              TCFontTextStyle18: @(16.875)},
                                      
                                      TCSizeCategoryMedium: @{
@@ -106,7 +106,7 @@ static BOOL sizeRatio = NO;
                                              TCFontTextStyle14: @(14),
                                              TCFontTextStyle15: @(15),
                                              TCFontTextStyle16: @(16),
-                                             TCFontTextStyle17: @(17),
+                                             TCFontTextStyle17: @(16),
                                              TCFontTextStyle18: @(18)},
                                      
                                      TCSizeCategoryLarge: @{
@@ -116,7 +116,7 @@ static BOOL sizeRatio = NO;
                                              TCFontTextStyle14: @(14.875),
                                              TCFontTextStyle15: @(15.9375),
                                              TCFontTextStyle16: @(17),
-                                             TCFontTextStyle17: @(18.0625),
+                                             TCFontTextStyle17: @(17),
                                              TCFontTextStyle18: @(19.125)},
                                      
                                      TCSizeCategoryExtraLarge: @{
@@ -126,7 +126,7 @@ static BOOL sizeRatio = NO;
                                              TCFontTextStyle14: @(15.75),
                                              TCFontTextStyle15: @(16.875),
                                              TCFontTextStyle16: @(18),
-                                             TCFontTextStyle17: @(19.125),
+                                             TCFontTextStyle17: @(18),
                                              TCFontTextStyle18: @(20.25)},
                                      
                                      TCSizeCategoryExtraExtraLarge: @{
@@ -136,7 +136,7 @@ static BOOL sizeRatio = NO;
                                              TCFontTextStyle14: @(17.0625),
                                              TCFontTextStyle15: @(18.28125),
                                              TCFontTextStyle16: @(19.5),
-                                             TCFontTextStyle17: @(20.71875),
+                                             TCFontTextStyle17: @(20),
                                              TCFontTextStyle18: @(26.5)},
                                      
                                      TCSizeCategoryExtraExtraExtraLarge: @{
@@ -146,7 +146,7 @@ static BOOL sizeRatio = NO;
                                              TCFontTextStyle14: @(17.0625),
                                              TCFontTextStyle15: @(18.28125),
                                              TCFontTextStyle16: @(19.5),
-                                             TCFontTextStyle17: @(20.71875),
+                                             TCFontTextStyle17: @(26),
                                              TCFontTextStyle18: @(26.5)}
                                      };
         
